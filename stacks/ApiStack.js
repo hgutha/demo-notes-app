@@ -15,6 +15,7 @@ export function ApiStack({ stack, app }) {
         },
       },
     },
+    cors: true,
     routes: {
         "GET /notes/{id}": "functions/get.main",
         "PUT /notes/{id}": "functions/update.main",
